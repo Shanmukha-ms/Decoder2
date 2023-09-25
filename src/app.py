@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import time
-df = pd.read_csv('src/data3.csv')
+df = pd.read_csv('data3.csv')
 df['Power (W)'] = df['Power (W)']*1e3
 df.rename({'Power (W)': 'Power (mW)'}, axis=1, inplace=True)
 df.rename({'Area (um2)': 'Area (um<sup>2</sup>)'}, axis=1, inplace=True)
