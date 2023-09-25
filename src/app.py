@@ -4,8 +4,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import time
 import os
+# get current working directory
+cwd = os.getcwd()
+print(cwd)
+#get files in directory
+files = os.listdir(cwd) 
 
-df = pd.read_csv('data3.csv')
+print(files)
+df = pd.read_csv(str(cwd)+'data3.csv')
 df['Power (W)'] = df['Power (W)']*1e3
 df.rename({'Power (W)': 'Power (mW)'}, axis=1, inplace=True)
 df.rename({'Area (um2)': 'Area (um<sup>2</sup>)'}, axis=1, inplace=True)
