@@ -41,8 +41,8 @@ fig6.update_layout(
     color="black"
 
 ), 
-    width=750,
-    height=550,
+    width=550,
+    height=400,
     template="plotly_white",
     xaxis=dict(
         title='WL-bit Output Decoder ',  # X-axis title
