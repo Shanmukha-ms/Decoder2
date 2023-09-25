@@ -74,9 +74,9 @@ fig6.update_layout(
 )
 
 
-fig6.write_image("pdp2.pdf")
+#fig6.write_image("pdp2.pdf")
 time.sleep(2)
-fig6.write_image("pdp.pdf")
+#fig6.write_image("pdp.pdf")
 time.sleep(2)
 df_spider = df[df["Output Lines"]==64]
 df = df.drop(df[(df['Decoder Design Style'] == "1. Traditional Decoder") ].index)
@@ -136,7 +136,7 @@ fig4.update_layout(
     )
 
 )
-fig4.write_image("spider.pdf")
+#fig4.write_image("spider.pdf")
 
 
 from dash import Dash, dcc, html
