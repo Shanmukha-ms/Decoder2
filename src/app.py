@@ -3,6 +3,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import time
+import os
+# get current working directory
+cwd = os.getcwd()
+
+#get files in directory
+files = os.listdir(cwd) 
+
+print(files)
 df = pd.read_csv('data3.csv')
 df['Power (W)'] = df['Power (W)']*1e3
 df.rename({'Power (W)': 'Power (mW)'}, axis=1, inplace=True)
