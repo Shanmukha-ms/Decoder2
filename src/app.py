@@ -11,7 +11,7 @@ print(cwd)
 files = os.listdir(cwd) 
 
 print(files)
-df = pd.read_csv(str(cwd)+'data3.csv')
+df = pd.read_csv(str(cwd)+'/data3.csv')
 df['Power (W)'] = df['Power (W)']*1e3
 df.rename({'Power (W)': 'Power (mW)'}, axis=1, inplace=True)
 df.rename({'Area (um2)': 'Area (um<sup>2</sup>)'}, axis=1, inplace=True)
