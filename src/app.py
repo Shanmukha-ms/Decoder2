@@ -169,4 +169,4 @@ app.layout = html.Div([
        
     ])
 ])
-app.run_server(debug=True, use_reloader=False)
+app.run_server(debug=True,, port=10000, use_reloader=False)
