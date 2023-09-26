@@ -86,7 +86,7 @@ fig6.update_layout(
 time.sleep(2)
 #fig6.write_image("pdp.pdf")
 time.sleep(2)
-df_spider = df[df["Output Lines"]==64]
+df_spider = df[df["Output Lines"]==128]
 df = df.drop(df[(df['Decoder Design Style'] == "1. Traditional Decoder") ].index)
 
 df_spider = df_spider.drop('Input', axis=1)
