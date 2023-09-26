@@ -164,7 +164,7 @@ app.layout = html.Div([
 
         dbc.Col([
             dcc.Graph(figure=fig4, mathjax=True)
-        ], width=6),
+        ], width=4),
   
        
     ])
