@@ -117,8 +117,8 @@ fig4.update_layout(
     color="black"
 
 ), 
-    width=650,
-    height=550,
+    width=450,
+    height=350,
    
      # Show the legend at the bottom of the graph
     legend=dict(
@@ -164,7 +164,7 @@ app.layout = html.Div([
 
         dbc.Col([
             dcc.Graph(figure=fig4, mathjax=True)
-        ], width=2),
+        ], width=4),
   
        
     ])
