@@ -117,8 +117,8 @@ fig4.update_layout(
     color="black"
 
 ), 
-    width=450,
-    height=350,
+    width=650,
+    height=550,
    
      # Show the legend at the bottom of the graph
     legend=dict(
